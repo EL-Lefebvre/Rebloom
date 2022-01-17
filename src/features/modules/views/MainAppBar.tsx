@@ -14,7 +14,7 @@ function MainAppBar() {
     <div>
       <AppBar
         position="fixed"
-        sx={{ height: "80px", backgroundColor: "black", marginTop: "none" }}
+        sx={{ height: "80px", backgroundColor: "#efead7", marginTop: "none" }}
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <Box sx={{ flex: 1 }} />
@@ -27,9 +27,11 @@ function MainAppBar() {
               fontSize: 36,
               fontFamily: "preconnect",
               color: "#c85103",
+              paddingTop: '20px',
+              letterSpacing: '10px'
             }}
           >
-            <h2> REBLOOM </h2>
+            <h2  > REBLOOM </h2>
           </Link>
           <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
             <Link

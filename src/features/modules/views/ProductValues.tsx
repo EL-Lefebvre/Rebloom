@@ -5,6 +5,10 @@ import { Theme } from "@mui/material/styles";
 import { SxProps } from "@mui/system";
 import * as React from "react";
 import Typography from "../components/Typography";
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import EmojiNatureIcon from '@mui/icons-material/EmojiNature';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import ProductDetails from "../components/ProductDetails";
 
 const item: SxProps<Theme> = {
   display: "flex",
@@ -13,6 +17,29 @@ const item: SxProps<Theme> = {
   px: 5,
 };
 
+const sections = [
+  {
+    Icon: {WbSunnyIcon}, 
+    title: ' Natural Sunscreen', 
+    details: 
+      "From the latest trendy boutique hotel to the iconic palace with XXL pool, go for a mini-vacation just a few subway stops away from your home."
+  
+  }, 
+  {
+    Icon: {EmojiNatureIcon}, 
+    title: 'Organic Only', 
+    details: 
+      "From the latest trendy boutique hotel to the iconic palace with XXL pool, go for a mini-vacation just a few subway stops away from your home."
+  
+  },
+  {
+    Icon: {PeopleAltIcon}, 
+    title: 'Ethically-sourced', 
+    details: 
+      "From the latest trendy boutique hotel to the iconic palace with XXL pool, go for a mini-vacation just a few subway stops away from your home."
+  
+  }
+]
 function ProductValues() {
   return (
     <Box
@@ -28,61 +55,11 @@ function ProductValues() {
         />
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
-            <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
-                sx={{ height: 55 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                The best luxury hotels
-              </Typography>
-              <Typography variant="h5">
-                {
-                  "From the latest trendy boutique hotel to the iconic palace with XXL pool"
-                }
-                {
-                  ", go for a mini-vacation just a few subway stops away from your home."
-                }
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
-                sx={{ height: 55 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                New experiences
-              </Typography>
-              <Typography variant="h5">
-                {
-                  "Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… "
-                }
-                {"your Sundays will not be alike."}
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
-                sx={{ height: 55 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                Exclusive rates
-              </Typography>
-              <Typography variant="h5">
-                {"By registering, you will access specially negotiated rates "}
-                {"that you will not find anywhere else."}
-              </Typography>
-            </Box>
+            {sections.map((section)=> 
+            <div>  
+              <ProductDetails Icon={section.Icon} title={section.title} details={section.details} />
+              </div>
+              )}
           </Grid>
         </Grid>
       </Container>
