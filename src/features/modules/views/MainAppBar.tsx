@@ -10,7 +10,7 @@ const rightLink = {
   ml: 3,
 };
 
-function AppAppBar() {
+function MainAppBar() {
   return (
     <div>
       <AppBar position="fixed">
@@ -51,4 +51,4 @@ function AppAppBar() {
   );
 }
 
-export default AppAppBar;
+export default MainAppBar;

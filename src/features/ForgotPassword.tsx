@@ -1,15 +1,15 @@
 import Box from "@mui/material/Box";
 import * as React from "react";
 import { Field, Form, FormSpy } from "react-final-form";
-import Typography from "./components/Typography";
-import FormButton from "./form/FormButton";
-import RFTextField from "./form/RFTextField";
-import { email, required } from "./form/validation";
+import Typography from "./modules/components/Typography";
+import FormButton from "./modules/form/FormButton";
 import FormFeedback from "./modules/form/FormFeedback";
-import AppAppBar from "./modules/views/AppAppBar";
-import AppFooter from "./modules/views/AppFooter";
-import withRoot from "./modules/withRoot";
-import AppForm from "./views/AppForm";
+import RFTextField from "./modules/form/RFTextField";
+import { email, required } from "./modules/form/validation";
+import AppForm from "./modules/views/AppForm";
+import MainAppBar from "./modules/views/MainAppBar";
+import MainAppFooter from "./modules/views/MainAppFooter";
+import withRoot from "./withRoot";
 
 function ForgotPassword() {
   const [sent, setSent] = React.useState(false);
@@ -33,7 +33,7 @@ function ForgotPassword() {
 
   return (
     <React.Fragment>
-      <AppAppBar />
+      <MainAppBar />
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
@@ -90,7 +90,7 @@ function ForgotPassword() {
           )}
         </Form>
       </AppForm>
-      <AppFooter />
+      <MainAppFooter />
     </React.Fragment>
   );
 }

@@ -42,7 +42,7 @@ const LANGUAGES = [
   },
 ];
 
-export default function AppFooter() {
+export default function MainAppFooter() {
   return (
     <Typography
       component="footer"
@@ -61,7 +61,7 @@ export default function AppFooter() {
               <Grid item sx={{ display: "flex" }}>
                 <Box component="a" href="https://mui.com/" sx={iconStyle}>
                   <img
-                    src="/static/themes/onepirate/appFooterFacebook.png"
+                    src="/static/themes/onepirate/MainAppFooterFacebook.png"
                     alt="Facebook"
                   />
                 </Box>
@@ -71,7 +71,7 @@ export default function AppFooter() {
                   sx={iconStyle}
                 >
                   <img
-                    src="/static/themes/onepirate/appFooterTwitter.png"
+                    src="/static/themes/onepirate/MainAppFooterTwitter.png"
                     alt="Twitter"
                   />
                 </Box>

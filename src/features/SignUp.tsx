@@ -7,10 +7,10 @@ import FormButton from "./modules/form/FormButton";
 import FormFeedback from "./modules/form/FormFeedback";
 import RFTextField from "./modules/form/RFTextField";
 import { email, required } from "./modules/form/validation";
-import AppAppBar from "./modules/views/AppAppBar";
-import AppFooter from "./modules/views/AppFooter";
 import AppForm from "./modules/views/AppForm";
-import withRoot from "./modules/withRoot";
+import MainAppBar from "./modules/views/MainAppBar";
+import MainAppFooter from "./modules/views/MainAppFooter";
+import withRoot from "./withRoot";
 
 function SignIn() {
   const [sent, setSent] = React.useState(false);
@@ -34,7 +34,7 @@ function SignIn() {
 
   return (
     <React.Fragment>
-      <AppAppBar />
+      <MainAppBar />
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
@@ -117,7 +117,7 @@ function SignIn() {
           </Link>
         </Typography>
       </AppForm>
-      <AppFooter />
+      <MainAppFooter />
     </React.Fragment>
   );
 }
