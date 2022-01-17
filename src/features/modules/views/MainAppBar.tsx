@@ -3,7 +3,6 @@ import Link from "@mui/material/Link";
 import * as React from "react";
 import AppBar from "../components/AppBar";
 import Toolbar from "../components/Toolbar";
-
 const rightLink = {
   fontSize: 16,
   color: "common.white",
@@ -13,7 +12,10 @@ const rightLink = {
 function MainAppBar() {
   return (
     <div>
-      <AppBar position="fixed">
+      <AppBar
+        position="fixed"
+        sx={{ height: "80px", backgroundColor: "black", marginTop: "none" }}
+      >
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <Box sx={{ flex: 1 }} />
           <Link
@@ -21,9 +23,13 @@ function MainAppBar() {
             underline="none"
             color="inherit"
             href="/premium-themes/onepirate/"
-            sx={{ fontSize: 24 }}
+            sx={{
+              fontSize: 36,
+              fontFamily: "preconnect",
+              color: "#c85103",
+            }}
           >
-            {"onepirate"}
+            <h2> REBLOOM </h2>
           </Link>
           <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
             <Link

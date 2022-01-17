@@ -1,15 +1,15 @@
 import * as React from "react";
+import backgroundImage from "../../assets/main-background.jpg";
 import Button from "../components/Button";
 import Typography from "../components/Typography";
 import ProductHeroLayout from "./ProductHeroLayout";
 
-const backgroundImage = "../../../assets/main-background.jpg";
 export default function ProductHero() {
   return (
     <ProductHeroLayout
       sxBackground={{
-        backgroundImage: backgroundImage,
-        backgroundColor: "#7fc7d9", // Average color of the background image.
+        backgroundImage: `url(${backgroundImage})`,
+        // Average color of the background image.
         backgroundPosition: "center",
       }}
     >
@@ -20,7 +20,7 @@ export default function ProductHero() {
         alt="increase priority"
       />
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        Upgrade your Sundays
+        Natural Products for your Skin
       </Typography>
       <Typography
         color="inherit"
