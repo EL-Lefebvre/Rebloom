@@ -27,11 +27,11 @@ function MainAppBar() {
               fontSize: 36,
               fontFamily: "preconnect",
               color: "#c85103",
-              paddingTop: '20px',
-              letterSpacing: '10px'
+              paddingTop: "20px",
+              letterSpacing: "10px",
             }}
           >
-            <h2  > REBLOOM </h2>
+            <h2> REBLOOM </h2>
           </Link>
           <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
             <Link
