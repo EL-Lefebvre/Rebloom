@@ -89,7 +89,6 @@ const images = [
     title: "Gifts",
     width: "50%",
   },
-
 ];
 
 export default function ProductCategories() {
