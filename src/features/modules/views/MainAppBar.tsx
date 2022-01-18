@@ -14,9 +14,16 @@ function MainAppBar() {
     <div>
       <AppBar
         position="fixed"
-        sx={{ height: "80px", backgroundColor: "#efead7", marginTop: "none" }}
+        sx={{
+          height: "120px",
+          backgroundColor: "white",
+          marginBottom: "40px",
+          paddingTop: "25px",
+        }}
       >
-        <Toolbar sx={{ justifyContent: "space-between" }}>
+        <Toolbar
+          sx={{ justifyContent: "space-between", backgroundColor: "#efead7" }}
+        >
           <Box sx={{ flex: 1 }} />
           <Link
             variant="h6"
@@ -25,9 +32,9 @@ function MainAppBar() {
             href="/premium-themes/onepirate/"
             sx={{
               fontSize: 36,
-              fontFamily: "preconnect",
+
               color: "#c85103",
-              paddingTop: "20px",
+
               letterSpacing: "10px",
             }}
           >
