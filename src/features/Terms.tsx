@@ -42,11 +42,7 @@ function SignIn() {
           </Typography>
           <Typography variant="body2" align="center">
             {"Not a member yet? "}
-            <Link
-              href="/premium-themes/onepirate/sign-up/"
-              align="center"
-              underline="always"
-            >
+            <Link href="/sign-up/" align="center" underline="always">
               Sign Up here
             </Link>
           </Typography>
@@ -109,10 +105,7 @@ function SignIn() {
           )}
         </Form>
         <Typography align="center">
-          <Link
-            underline="always"
-            href="/premium-themes/onepirate/forgot-password/"
-          >
+          <Link underline="always" href="/forgot-password/">
             Forgot password?
           </Link>
         </Typography>

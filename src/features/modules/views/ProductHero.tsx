@@ -41,7 +41,7 @@ export default function ProductHero() {
         variant="contained"
         size="large"
         component="a"
-        href="/premium-themes/onepirate/sign-up/"
+        href="/sign-up/"
         sx={{ minWidth: 200, boxShadow: " rgba(0, 0, 0, 0.1) 0px 4px 12px" }}
       >
         Register

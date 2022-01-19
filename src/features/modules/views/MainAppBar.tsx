@@ -33,7 +33,7 @@ function MainAppBar() {
             variant="h6"
             underline="none"
             color="inherit"
-            href="/premium-themes/onepirate/"
+            href="/"
             sx={{
               fontSize: 36,
 
@@ -49,7 +49,7 @@ function MainAppBar() {
               color="inherit"
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-in/"
+              href="/sign-in/"
               sx={rightLink}
             >
               {"Sign In"}
@@ -57,7 +57,7 @@ function MainAppBar() {
             <Link
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-up/"
+              href="/sign-up/"
               sx={{ ...rightLink, color: "secondary.main" }}
             >
               {"Sign Up"}

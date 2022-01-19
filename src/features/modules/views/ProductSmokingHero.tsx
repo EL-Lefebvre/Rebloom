@@ -1,4 +1,4 @@
-import Box from "@mui/material/Box";
+import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import * as React from "react";
@@ -31,12 +31,7 @@ function ProductSmokingHero() {
       <Typography variant="subtitle1" sx={{ my: 3 }}>
         We are here to help. Get in touch!
       </Typography>
-      <Box
-        component="img"
-        src="/static/themes/onepirate/producBuoy.svg"
-        alt="buoy"
-        sx={{ width: 60 }}
-      />
+      <QuestionAnswerIcon color="primary" />
     </Container>
   );
 }
