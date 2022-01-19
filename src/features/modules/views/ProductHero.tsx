@@ -34,7 +34,7 @@ export default function ProductHero() {
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
+        Enjoy secret offers up to -30% off the best skincare products.
       </Typography>
       <Button
         color="secondary"

@@ -46,7 +46,7 @@ function MainAppBar() {
           </Link>
           <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
             <Link
-              color="inherit"
+              color="secondary"
               variant="h6"
               underline="none"
               href="/sign-in/"
