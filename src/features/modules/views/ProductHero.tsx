@@ -19,7 +19,13 @@ export default function ProductHero() {
         src={backgroundImage}
         alt="increase priority"
       />
-      <Typography color="inherit" align="center" variant="h3" marked="center">
+      <Typography
+        color="inherit"
+        align="center"
+        variant="h3"
+        marked="center"
+        paddingTop="50px"
+      >
         Organic Products for a Natural Skin
       </Typography>
       <Typography
@@ -36,7 +42,7 @@ export default function ProductHero() {
         size="large"
         component="a"
         href="/premium-themes/onepirate/sign-up/"
-        sx={{ minWidth: 200 }}
+        sx={{ minWidth: 200, boxShadow: " rgba(0, 0, 0, 0.1) 0px 4px 12px" }}
       >
         Register
       </Button>

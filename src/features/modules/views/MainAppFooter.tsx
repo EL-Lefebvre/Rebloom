@@ -1,3 +1,5 @@
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -60,20 +62,14 @@ export default function MainAppFooter() {
             >
               <Grid item sx={{ display: "flex" }}>
                 <Box component="a" href="https://mui.com/" sx={iconStyle}>
-                  <img
-                    src="/static/themes/onepirate/MainAppFooterFacebook.png"
-                    alt="Facebook"
-                  />
+                  <FacebookIcon color="primary" />
                 </Box>
                 <Box
                   component="a"
                   href="https://twitter.com/MaterialUI"
                   sx={iconStyle}
                 >
-                  <img
-                    src="/static/themes/onepirate/MainAppFooterTwitter.png"
-                    alt="Twitter"
-                  />
+                  <TwitterIcon color="primary" />
                 </Box>
               </Grid>
               <Grid item>

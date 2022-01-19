@@ -22,7 +22,11 @@ function MainAppBar() {
         }}
       >
         <Toolbar
-          sx={{ justifyContent: "space-between", backgroundColor: "#efead7" }}
+          sx={{
+            justifyContent: "space-between",
+            backgroundColor: "#efead7",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 10px",
+          }}
         >
           <Box sx={{ flex: 1 }} />
           <Link

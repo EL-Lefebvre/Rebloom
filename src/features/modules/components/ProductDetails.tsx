@@ -19,7 +19,14 @@ const ProductDetails = ({ Icon, title, details }: ProductProps) => {
   };
 
   return (
-    <Box sx={item}>
+    <Box
+      sx={{
+        ...item,
+
+        minHeight: "300px",
+        padding: "20px",
+      }}
+    >
       <Icon fontSize="large" />
       <Typography variant="h6" sx={{ my: 5 }}>
         {title}
