@@ -4,17 +4,9 @@ import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import { Theme } from "@mui/material/styles";
-import { SxProps } from "@mui/system";
 import * as React from "react";
 import curvyLines from "../../assets/productCurvyLines.png";
 import ProductDetails from "../components/ProductDetails";
-const item: SxProps<Theme> = {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  px: 5,
-};
 
 const sections = [
   {

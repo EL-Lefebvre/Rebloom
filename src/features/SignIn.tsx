@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import * as React from "react";
 import { Field, Form, FormSpy } from "react-final-form";
+import curvyLines from "./assets/productCurvyLines.png";
 import Typography from "./modules/components/Typography";
 import FormButton from "./modules/form/FormButton";
 import FormFeedback from "./modules/form/FormFeedback";
@@ -35,6 +36,12 @@ function SignIn() {
   return (
     <React.Fragment>
       <MainAppBar />
+      <Box
+        component="img"
+        src={curvyLines}
+        alt="curvy lines"
+        sx={{ pointerEvents: "none", position: "absolute", width: "100%" }}
+      />
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
