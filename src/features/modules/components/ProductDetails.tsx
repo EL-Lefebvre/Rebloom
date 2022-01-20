@@ -22,7 +22,6 @@ const ProductDetails = ({ Icon, title, details }: ProductProps) => {
     <Box
       sx={{
         ...item,
-
         minHeight: "300px",
         padding: "20px",
       }}
