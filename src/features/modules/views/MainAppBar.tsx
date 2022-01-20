@@ -23,7 +23,7 @@ function MainAppBar() {
       >
         <Toolbar
           sx={{
-            justifyContent: "space-between",
+            justifyContent: "space-evenly",
             backgroundColor: "#efead7",
             boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 10px",
           }}
@@ -42,7 +42,7 @@ function MainAppBar() {
               letterSpacing: "10px",
             }}
           >
-            <h2> REBLOOM </h2>
+            <h3> REBLOOM </h3>
           </Link>
           <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
             <Link
