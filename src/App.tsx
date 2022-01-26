@@ -8,6 +8,7 @@ import MainAppFooter from "./features/modules/views/MainAppFooter";
 import SignIn from "./features/SignIn";
 import SignUp from "./features/SignUp";
 import withRoot from "./features/withRoot";
+
 function App() {
   return (
     <div className="App">
