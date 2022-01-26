@@ -7,12 +7,14 @@ const rawTheme = createTheme({
       light: "#69696a",
       main: "#28282a",
       dark: "#1e1e1f",
+      contrastText: "#177744",
     },
     secondary: {
       light: "#fff5f8",
       main: "#ff3366",
       dark: "#e62958",
     },
+
     warning: {
       main: "#ffc071",
       dark: "#ffb25e",

@@ -81,6 +81,7 @@ function TextField(props: OnePirateTextFieldProps & WithStyles<typeof styles>) {
     noBorder,
     size = "medium",
     SelectProps,
+    variant,
     ...other
   } = props;
 

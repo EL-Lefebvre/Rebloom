@@ -14,29 +14,42 @@ function MainAppBar() {
     <div>
       <AppBar
         position="fixed"
-        sx={{ height: "80px", backgroundColor: "black", marginTop: "none" }}
+        sx={{
+          height: "120px",
+          backgroundColor: "white",
+          marginBottom: "40px",
+          paddingTop: "25px",
+        }}
       >
-        <Toolbar sx={{ justifyContent: "space-between" }}>
+        <Toolbar
+          sx={{
+            justifyContent: "space-evenly",
+            backgroundColor: "#efead7",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 10px",
+          }}
+        >
           <Box sx={{ flex: 1 }} />
           <Link
             variant="h6"
             underline="none"
             color="inherit"
-            href="/premium-themes/onepirate/"
+            href="/"
             sx={{
               fontSize: 36,
-              fontFamily: "preconnect",
+
               color: "#c85103",
+
+              letterSpacing: "10px",
             }}
           >
-            <h2> REBLOOM </h2>
+            <h3> REBLOOM </h3>
           </Link>
           <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
             <Link
-              color="inherit"
+              color="secondary"
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-in/"
+              href="/sign-in/"
               sx={rightLink}
             >
               {"Sign In"}
@@ -44,7 +57,7 @@ function MainAppBar() {
             <Link
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-up/"
+              href="/sign-up/"
               sx={{ ...rightLink, color: "secondary.main" }}
             >
               {"Sign Up"}

@@ -19,8 +19,14 @@ export default function ProductHero() {
         src={backgroundImage}
         alt="increase priority"
       />
-      <Typography color="inherit" align="center" variant="h2" marked="center">
-        Natural Products for your Skin
+      <Typography
+        color="inherit"
+        align="center"
+        variant="h3"
+        marked="center"
+        paddingTop="50px"
+      >
+        Organic Products for a Natural Skin
       </Typography>
       <Typography
         color="inherit"
@@ -28,15 +34,15 @@ export default function ProductHero() {
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
+        Enjoy secret offers up to -30% off the best skincare products.
       </Typography>
       <Button
         color="secondary"
         variant="contained"
         size="large"
         component="a"
-        href="/premium-themes/onepirate/sign-up/"
-        sx={{ minWidth: 200 }}
+        href="/sign-up/"
+        sx={{ minWidth: 200, boxShadow: " rgba(0, 0, 0, 0.1) 0px 4px 12px" }}
       >
         Register
       </Button>
