@@ -24,7 +24,7 @@ function MainAppBar() {
         <Toolbar
           sx={{
             justifyContent: "space-evenly",
-            backgroundColor: "#efead7",
+            backgroundColor: "#146356",
             boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 10px",
           }}
         >
@@ -37,7 +37,7 @@ function MainAppBar() {
             sx={{
               fontSize: 36,
 
-              color: "#c85103",
+              color: "#F3C892",
 
               letterSpacing: "10px",
             }}
