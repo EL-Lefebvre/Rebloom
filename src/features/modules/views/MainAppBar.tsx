@@ -24,25 +24,22 @@ function MainAppBar() {
         <Toolbar
           sx={{
             justifyContent: "space-evenly",
-            backgroundColor: "#146356",
-            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 10px",
           }}
         >
           <Box sx={{ flex: 1 }} />
           <Link
-            variant="h6"
+            variant="h2"
             underline="none"
             color="inherit"
             href="/"
             sx={{
-              fontSize: 36,
+              color: "black",
+              fontWeight: "100",
 
-              color: "#F3C892",
-
-              letterSpacing: "10px",
+              letterSpacing: "15px",
             }}
           >
-            <h3> REBLOOM </h3>
+            REBLOOM
           </Link>
           <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
             <Link
@@ -50,7 +47,25 @@ function MainAppBar() {
               variant="h6"
               underline="none"
               href="/sign-in/"
-              sx={rightLink}
+              sx={{ ...rightLink, color: "secondary.main" }}
+            >
+              {"Home"}
+            </Link>
+            <Link
+              color="secondary"
+              variant="h6"
+              underline="none"
+              href="/sign-in/"
+              sx={{ ...rightLink, color: "secondary.main" }}
+            >
+              {"About"}
+            </Link>
+            <Link
+              color="secondary"
+              variant="h6"
+              underline="none"
+              href="/sign-in/"
+              sx={{ ...rightLink, color: "secondary.main" }}
             >
               {"Sign In"}
             </Link>
