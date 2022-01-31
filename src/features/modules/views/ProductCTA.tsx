@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import * as React from "react";
+import FeaturePicture from "../../assets/feature-2.jpg";
 import Button from "../components/Button";
 import Snackbar from "../components/Snackbar";
 import TextField from "../components/TextField";
@@ -80,7 +81,7 @@ function ProductCTA() {
           />
           <Box
             component="img"
-            src="https://images.unsplash.com/photo-1527853787696-f7be74f2e39a?auto=format&fit=crop&w=750&q=80"
+            src={FeaturePicture}
             alt="call to action"
             sx={{
               position: "absolute",

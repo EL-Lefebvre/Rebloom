@@ -3,10 +3,11 @@ import ButtonBase from "@mui/material/ButtonBase";
 import Container from "@mui/material/Container";
 import { styled } from "@mui/material/styles";
 import * as React from "react";
+import BathPicture from "../../assets/bath-2.jpg";
 import BodyPicture from "../../assets/body-cream.jpg";
 import CreamPicture from "../../assets/cream.jpg";
 import FacePicture from "../../assets/eyes.jpg";
-import GiftPicture from "../../assets/gift.jpg";
+import GiftPicture from "../../assets/gift-2.jpg";
 import HairPicture from "../../assets/hair.jpg";
 import PerfumePicture from "../../assets/perfume.jpg";
 import Typography from "../components/Typography";
@@ -86,7 +87,7 @@ const images = [
     width: "50%",
   },
   {
-    url: HairPicture,
+    url: BathPicture,
     title: "Bath & Shower",
     width: "50%",
   },
