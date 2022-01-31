@@ -37,7 +37,7 @@ export default function ProductHero() {
         Enjoy secret offers up to -30% off the best skincare products.
       </Typography>
       <Button
-        color="secondary"
+        color="warning"
         variant="contained"
         size="large"
         component="a"
