@@ -55,7 +55,7 @@ function MainAppBar() {
               color="secondary"
               variant="h6"
               underline="none"
-              href="/sign-in/"
+              href="/about"
               sx={{ ...rightLink, color: "secondary.main" }}
             >
               {"About"}

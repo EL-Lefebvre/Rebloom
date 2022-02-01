@@ -1,11 +1,16 @@
 import * as React from "react";
-import MainAppBar from "./modules/views/MainAppBar";
-import ProductCategories from "./modules/views/ProductCategories";
-import ProductCTA from "./modules/views/ProductCTA";
-import ProductHero from "./modules/views/ProductHero";
-import ProductSmokingHero from "./modules/views/ProductSmokingHero";
-import ProductValues from "./modules/views/ProductValues";
 import withRoot from "./withRoot";
+
+const ProductCategories = React.lazy(
+  () => import("./modules/views/ProductCategories")
+);
+const MainAppBar = React.lazy(() => import("./modules/views/MainAppBar"));
+const ProductCTA = React.lazy(() => import("./modules/views/ProductCTA"));
+const ProductHero = React.lazy(() => import("./modules/views/ProductHero"));
+const ProductSmokingHero = React.lazy(
+  () => import("./modules/views/ProductSmokingHero")
+);
+const ProductValues = React.lazy(() => import("./modules/views/ProductValues"));
 
 function Index() {
   return (
